@@ -1,0 +1,80 @@
+:root {
+    --pale-purple: #D7D3BF;
+    --bone: #A59D84;
+    --dun: #2E3532;
+    --sage: #b3b492ff;
+    --dim-gray: #6f686dff;
+  }
+  
+  body {
+    display: flex;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    cursor: context-menu;
+    user-select: none;
+  }
+  
+  nav {
+    background-color: var(--pale-purple);
+    width: 300px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-top: 20px;
+    font-weight: bold;
+  }
+  
+  nav img {
+    width: 250px;
+    height: 200px;
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+    margin-top: 140px; /* Ensures the menu is centered with space for the image */
+  }
+  
+  nav ul li {
+    font-size: 35px;
+    margin-bottom: 15px;
+    margin: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: var(--dim-gray);
+    font-size: 23px;
+    padding: 20px 40px;
+    border-radius: 10px;
+  }
+  
+  nav ul li a:hover {
+    color: var(--sage);
+    background-color: var(--dim-gray);
+  }
+  
+  main {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: var(--bone);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+    color: var(--dun);
+  }
